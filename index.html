@@ -10,11 +10,12 @@
 <body>
     <main>
         <form id = 'js-form'>
-            <label for="js-state">Type which state you would like to travel to:<input type="text" id = 'js-state'></label>
-            <label for="js-max-results">How many results do you want to see?<input type="text" id = 'js-max-results'></label>
+            <label for="js-state">Type which state you would like to travel to:<input type="text" id = 'js-state' placeholder="Enter State Code, eg OH"></label>
+            <label for="js-max-results">How many results do you want to see?<input type="number" min="0" id = 'js-max-results'></label>
             <button type ="submit">Submit</button>
         </form>
-        <section id = 'results'>
+        <section id = 'result-list'>
+            <ul id = 'results'></ul>
         </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
