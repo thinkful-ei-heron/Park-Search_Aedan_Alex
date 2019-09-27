@@ -9,12 +9,15 @@
 </head>
 <body>
     <main>
-        <form >
-            <label for=""></label>
-            <label for=""></label>
-            <button></button>
+        <form id = 'js-form'>
+            <label for="js-state">Type which state you would like to travel to:<input type="text" id = 'js-state'></label>
+            <label for="js-max-results">How many results do you want to see?<input type="text" id = 'js-max-results'></label>
+            <button type ="submit">Submit</button>
         </form>
+        <section id = 'results'>
+        </section>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src = 'index.js'></script>
 </body>
 </html>
